@@ -26,28 +26,26 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault(); // Mencegah pengiriman form secara default
 
-    // Ambil data dari form
-    var nama = document.getElementById("nama").value;
-    var pengaduan = document.getElementById("pengaduan").value;
+    var form = event.target;
+    var formData = new FormData(form);
 
-    // Kirim data ke Google Sheets menggunakan Google Apps Script
-    fetch(
-      "https://script.google.com/macros/s/AKfycbzteF1YcCXwSLR6TqE-eiaF_aNZKl71iRnfACRyYnDS6MFQmW6j5m118dBKk_r870s/exec",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ nama: nama, pengaduan: pengaduan }),
-      }
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        // Tampilkan notifikasi sukses
-        document.getElementById("notification").classList.remove("d-none");
-        document.getElementById("complaintForm").reset(); // Reset form setelah pengiriman
+    // Kirim data form ke Google Sheets menggunakan Fetch API
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => {
+        if (response.ok) {
+          document.getElementById("notification").classList.remove("d-none");
+          form.reset(); // Reset form setelah pengiriman sukses
+        } else {
+          alert(
+            "Terjadi kesalahan saat mengirim pengaduan. Silakan coba lagi."
+          );
+        }
       })
       .catch((error) => {
         console.error("Error:", error);
+        alert("Terjadi kesalahan saat mengirim pengaduan. Silakan coba lagi.");
       });
   });
