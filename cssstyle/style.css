@@ -1,0 +1,380 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #fff;
+}
+
+/* Navbar Transparan */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Transparansi latar belakang */
+    backdrop-filter: blur(10px);
+    /* Blur latar belakang */
+    transition: background-color 0.3s ease;
+    /* Transisi untuk efek hover */
+}
+
+.navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    /* Pastikan navbar berada di atas konten */
+}
+
+/* Efek hover pada link navbar */
+.navbar-nav .nav-link {
+    color: #2E8B57;
+    /* Warna teks */
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1e7e34;
+    /* Warna teks saat hover */
+}
+
+#home {
+    position: relative;
+    color: #fff;
+    background-color: #2E8B57;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+#potensi {
+    padding: 100px 0;
+    background-color: #f0f8f5;
+}
+
+#potensi h2 {
+    font-size: 2.5rem;
+    color: #2E8B57;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+#potensi p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #2E8B57;
+}
+
+.card-text {
+    color: #777;
+    font-size: 1rem;
+}
+
+#bumdes {
+    padding: 100px 0;
+    background-color: #e8f5e9;
+}
+
+#bumdes h2 {
+    font-size: 2.5rem;
+    color: #2E8B57;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+#bumdes p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #2E8B57;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #777;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+#galeri {
+    padding: 100px 0;
+    background-color: #f0f8f5;
+}
+
+#galeri h2 {
+    font-size: 2.5rem;
+    color: #2E8B57;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+#galeri .img-fluid {
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#galeri .img-fluid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#infografis {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+#infografis h2 {
+    font-size: 2.5rem;
+    color: #2E8B57;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #2E8B57;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #777;
+    font-size: 1rem;
+}
+
+#profil {
+    padding: 100px 0;
+    background-color: #f4f7f6;
+}
+
+#profil h2 {
+    font-size: 2.5rem;
+    color: #2E8B57;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+#profil p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.map-container {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+iframe {
+    border: none;
+}
+
+#pendapatan {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+#pendapatan h2 {
+    font-size: 2.5rem;
+    color: #2E8B57;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+#pendapatan p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #2E8B57;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #777;
+    font-size: 1rem;
+}
+
+#pengaduan {
+    padding: 100px 0;
+    background-color: #f4f7f6;
+}
+
+#pengaduan h2 {
+    font-size: 2.5rem;
+    color: #2E8B57;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.form-label {
+    font-size: 1.1rem;
+    color: #2E8B57;
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+.btn-success {
+    background-color: #2E8B57;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+    background-color: #245a40;
+}
+
+/* Styling untuk notifikasi sukses */
+.alert-success {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+
+footer {
+    background-color: #343a40;
+    /* Warna latar belakang gelap */
+    color: #ffffff;
+    /* Warna teks putih */
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #aab7b8;
+    /* Warna teks saat hover */
+}
+
+footer ul.list-inline {
+    padding: 0;
+    margin: 0;
+}
+
+footer ul.list-inline li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul.list-inline li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer ul.list-inline li a:hover {
+    color: #aab7b8;
+    /* Warna teks saat hover */
+}
