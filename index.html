@@ -318,17 +318,19 @@
 
 
     <!-- Pengaduan -->
-    <section id="pengaduan" class="pt-5 pb-4 bg-light text-center">
+    <section id="pengaduan" class="vh-100 bg-light text-center d-flex flex-column justify-content-center">
         <div class="container">
             <h2 class="mb-4">Form Pengaduan</h2>
-            <form id="complaintForm">
+            <form id="complaintForm"
+                action="https://script.google.com/macros/s/AKfycbx-7WG4wRXBkjNtkM7L7mdnVKgWFu1fcR1WR4J5sehkS4YDu46tJuUoIkOtFpdEHEpI/exec"
+                method="post">
                 <div class="mb-3">
                     <label for="nama" class="form-label">Nama Lengkap</label>
-                    <input type="text" class="form-control" id="nama" required>
+                    <input type="text" class="form-control" id="nama" name="nama" required>
                 </div>
                 <div class="mb-3">
                     <label for="pengaduan" class="form-label">Pengaduan</label>
-                    <textarea class="form-control" id="pengaduan" rows="3" required></textarea>
+                    <textarea class="form-control" id="pengaduan" name="pengaduan" rows="3" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Kirim Pengaduan</button>
             </form>
@@ -339,8 +341,6 @@
             </div>
         </div>
     </section>
-
-
 
     <!-- Footer -->
     <footer class="text-center bg-dark text-white py-4">
